@@ -12,11 +12,12 @@ var arContainer = ArView.createView({
   width : WIDTH,
   height : Ti.UI.FILL,
   trueHeading : false,
-  backgroundColor : 'transparent'
+  offset : 0
+  
 });
 // adding all POIs as view
 // this example shows degrees:
-for (var i=0;i<36;i++) {
+for (var i=0; i<36; i++) {
   arContainer.add(Ti.UI.createLabel({
     text : i + '0°',
     center : {
