@@ -12,8 +12,8 @@ var arContainer = ArView.createView({
   width : WIDTH,
   height : Ti.UI.FILL,
   trueHeading : false,
-  offset : 0
-  
+  offset : 0,
+  autostart : true
 });
 // adding all POIs as view
 // this example shows degrees:
