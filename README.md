@@ -15,16 +15,16 @@ var arContainer = ArView.createView({
   backgroundColor : 'transparent'
 });
 // adding all POIs as view
-for (var i=0;i<10;i++) {
+// this example shows degrees:
+for (var i=0;i<36;i++) {
   arContainer.add(Ti.UI.createLabel({
-    text : i,
+    text : i + '0°',
     center : {
       x : i/10*100 + '%',
       y : '50%'
     }
   }))
-
-}
+};
 
 arContainer.start();
 // now the contentContainer followes the heading of compass 
